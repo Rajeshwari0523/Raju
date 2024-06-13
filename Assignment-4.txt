@@ -1,0 +1,104 @@
+**------------------------------Assigment - 1--------------------------------------------------------------------**
+Q.1. Declare a div() function with two parameters. Then call the function and pass two numbers and display their division. 
+
+//Code
+
+# Main function using parametres
+def div(a, b):
+    #Checking the conditon 
+    if b == 0:
+        return "Error: Division by zero!"
+    else:
+        return a / b
+
+# Call the div() function with two numbers
+num1 = 10
+num2 = 2
+result = div(num1, num2)
+print("Division result:", result)
+
+//output
+Division result: 5.0
+
+
+**------------------------------Assigment - 2------------------------------------------------------------**
+
+Q.2. Declare a square() function with one parameter. Then call the function and pass one number and display the square of that number .
+
+//Code
+
+# Main function using parametres
+
+def square(a):
+    return a * a
+
+num1 = 10
+#Calling the function
+result = square(num1)
+# print the result
+print("Square of the number is :", result)
+
+//output
+
+Square of the number is : 100
+
+**------------------------------Assigment - 3------------------------------------------------------------**
+Q.3. Using max() and min() functions display the maximum and minimum of 5 random numbers.
+
+// Code
+
+import random
+
+# Main function using parametres
+
+def find_max_and_min(numbers):
+    max_number = max(numbers)
+    min_number = min(numbers)
+    return max_number, min_number
+
+# Generate 5 random numbers
+random_numbers = [random.randint(1, 100) for _ in range(5)]
+
+# Find the maximum and minimum using the function
+max_number, min_number = find_max_and_min(random_numbers)
+
+# Display the maximum and minimum
+print("Random Numbers:", random_numbers)
+print("Maximum:", max_number)
+print("Minimum:", min_number)
+
+//output
+Random Numbers: [26, 83, 67, 82, 42]
+Maximum: 83
+Minimum: 26
+
+**------------------------------Assigment - 4------------------------------------------------------------**
+
+Q.4. Accept a name from the user and display that in lower case using lower() function
+
+//Code
+
+def display_lowercase_name(name):
+    # Convert the name to lowercase using the lower() function
+    lowercase_name = name.lower()
+
+    # Display the name in lowercase
+    print("Name in lowercase:", lowercase_name)
+
+# Accept a name from the user
+user_name = input("Enter your name: ")
+
+# Call the function and pass the user's name as a parameter
+display_lowercase_name(user_name)
+
+//Output
+
+Enter your name: HELLO
+Name in lowercase: hello
+
+
+
+
+
+
+

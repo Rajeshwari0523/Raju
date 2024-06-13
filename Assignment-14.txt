@@ -1,0 +1,106 @@
+ 1. Write a Python program to Get Only unique items from two sets. 
+
+Input: 
+
+set1 = {10, 20, 30, 40, 50} 
+
+set2 = {30, 40, 50, 60, 70} ?
+
+def unique_items(set1, set2):
+    # Combine the two sets using the union operator "|"
+    combined_set = set1 | set2
+    return combined_set
+
+# Given input sets
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+
+# Call the function to get unique items from both sets
+result = unique_items(set1, set2)
+# Print the result
+print("Output:", result)
+
+Output: {70, 40, 10, 50, 20, 60, 30}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Write a Python program to Return a set of elements present in Set A or B, but not both.
+
+ Input: 
+
+set1 = {10, 20, 30, 40, 50} 
+
+set2 = {30, 40, 50, 60, 70}?
+
+
+def symmetric_difference(set1, set2):
+    # Use the symmetric_difference() method to find the elements present in set1 or set2, but not both
+    result = set1.symmetric_difference(set2)
+    return result
+
+# Given input sets
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+
+# Call the function to get the symmetric difference between set1 and set2
+result = symmetric_difference(set1, set2)
+
+# Print the result
+print("Output:", result)
+
+output:{20, 70, 10, 60}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Write a Python program to Check if two sets have any elements in common. If yes, display the common elements. 
+
+Input: 
+
+set1 = {10, 20, 30, 40, 50} 
+
+set2 = {60, 70, 80, 90, 10}? 
+
+def common_elements(set1, set2):
+    # Find the intersection of set1 and set2 using the intersection() method
+    common = set1.intersection(set2)
+    return common
+
+# Given input sets
+set1 = {10, 20, 30, 40, 50}
+set2 = {60, 70, 80, 90, 10}
+
+# Call the function to find the common elements
+result = common_elements(set1, set2)
+
+# Check if there are any common elements
+if result:
+    # Print the common elements if they exist
+    print("Output:", result)
+else:
+    # Print a message indicating that there are no common elements
+    print("No common elements found.")
+
+output:{10}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. Write a Python program to Remove items from set1 that are not common to both set1 and set2.
+
+Input: 
+
+set1 = {10, 20, 30, 40, 50} 
+
+set2 = {30, 40, 50, 60, 70} ?
+
+def remove_non_common(set1, set2):
+    # Find the intersection of set1 and set2 using the intersection() method
+    common_elements = set1.intersection(set2)
+    # Remove items from set1 that are not common to both set1 and set2 using the difference_update() method
+    set1.difference_update(set1 - common_elements)
+    return set1
+
+# Given input sets
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+
+# Call the function to remove non-common items from set1
+result = remove_non_common(set1, set2)
+
+# Print the modified set1
+print("Output:", result)
+
+Output: {50, 40, 30}

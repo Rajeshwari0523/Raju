@@ -1,0 +1,114 @@
+**------------------------------Assigment - 1-------------------------------**
+
+
+1. Using input() function take one number from the user and using ternary operatorscode
+
+Code:
+
+#using Ternary Operator
+
+# creating  a function based program
+# Taking a input
+num1 = int(input("Enter a Number to check the number is even or odd :--"))
+def ternary_operator():
+    # Ternary operator comparing the single value
+    result = "Even" if num1 % 2 == 0 else "Odd"
+
+    # Print statement
+    print(result)
+
+ternary_operator()
+
+output:
+Enter a Number to check the number is even or odd :--3
+Odd
+
+
+**---------------------------------------Assigment - 2------------------------------------------**
+
+Q.2 Using input function take two number and then swap the number
+
+
+Code:
+
+# creating  a function based program
+
+def swap(num1=None):
+
+    # without using swap function
+    # Taking an input
+
+    num1 = int(input("Enter First Number: "))
+    num2 = int(input("Enter Second Number "))
+
+    print("Before swapping numbers:- ", num1 ," ",num2)
+    # swapping numbers using operators 
+    num1 = num1 + num2
+    num2 = num1 - num2
+    num1 = num1 - num2
+    #print function
+    print("After swapping numbers:- ", num1, num2)
+swap()
+   
+
+output:
+
+Enter First Number: 10
+Enter Second Number 20
+Before swapping numbers:-  10   20
+After swapping numbers:-  20 10
+
+
+**---------------------------------------Assigment - 3------------------------------------------**
+
+Q.3 Write a Program to Convert Kilometers to Miles
+
+code:
+# creating  a function based progra
+def km_to_miles(num1=None):
+    # without using swap function
+    # Taking an input
+    m = float(input("Enter a kilomter to convert to miles :-"))
+
+    #converting miles formula
+    miles = m * 0.62
+
+    print(m," Kilometer is equals to = ",miles,"Miles")
+
+km_to_miles()
+
+
+
+output:
+Enter a kilomter to convert to miles :-30
+30.0  Kilometer is equals to =  18.6 Miles
+
+
+**---------------------------------------Assigment - 4------------------------------------------**
+
+4. Find the Simple Interest on Rs. 200 for 5 years at 5% per year.
+
+code:
+# creating  a function based progra
+
+def si():
+    # values
+    principle = 200
+    interest = 5
+    time = 5
+    # Simple interest formula
+    simple_Interst = (principle * interest * time) / 100
+
+    print("Simple Interst of give vales are := " ,simple_Interst)
+
+si()
+
+output:
+
+Simple Interst of give vales are :=  50.0
+
+
+
+
+
+
